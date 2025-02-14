@@ -140,12 +140,16 @@ body{
             width: 400px;
         }
         .section-grid-1{
-            flex-direction: row;
-            background: red !important;           
-            max-width: 100%;
+            flex-direction: row-reverse;
         }
-
-        
+        .menu-top{
+            display: flex;
+            flex-direction: row;
+            gap:30px;
+            list-style: none;
+            font-weight: bold;
+            justify-content: center;
+        } 
         .header{
             display: flex;
         }
@@ -154,15 +158,25 @@ body{
         }
         .icone-profiabet{
             display: flex;
-            margin-top: 100px;
-            margin-left: 230px;
+            width: 290px;
+            margin-left: 20px;
         }
         .login{
             display: flex;
-            margin-top: 180px;
-            margin-left: 230px;
+            margin-top: 150px;
+            margin-left: 20px;
             gap:10px;
             flex-direction: row;
+        }
+        .descricao{
+            display: flex;
+            position: relative;
+            width: 330px;
+            height: 220px;
+            left: 530px;
+            margin-top: 330px;
+            border-radius: 15px;
+            border: 3px solid rgb(89, 89, 177);
         }
         .criar-conta{
             display: flex;
@@ -194,25 +208,20 @@ body{
         }
         .foto-mobile{
             display: flex;
-            margin-left: 190px;
-            margin-top: -100px;
-        }
-        .descricao{
-            display: flex;
-            width: 330px;
-            height: 220px;
-            margin-top: -3px;
-            border-radius: 15px;
-            border: 3px solid rgb(89, 89, 177);
+            width: 500px;
+            position: relative;
+            margin-top: 255px;
+            right: 120px;
         }
         .titulo-descricao{
             color: white;
-            margin-top: 15px;
-            font-size: 28px;
+            margin-top: 255px;
+            font-size: 35px;
+            margin-left: 280px;
         }
         .descricao-texto{
             display: flex;
-            margin-top: -160px;
+            margin-top: 160px;
             width: 270px;
             height: 50px;
             color: white;
@@ -222,7 +231,8 @@ body{
         }
         .botao-leia-mais{
             display: flex;
-            margin-top: 130px;
+            margin-top: -100px;
+            margin-left: 420px;
             width: 115px;
             height: 35px;
             border-radius: 20px;
@@ -234,9 +244,10 @@ body{
         }
         .seta{
             display: flex;
-            margin-top: 40px;
-            left: 310px;
-            opacity: 40%;
+            position: absolute;
+            bottom: 30px;
+            left: 450px;
+            opacity: 100%;
         }
 }
 /* desktop */
@@ -254,20 +265,28 @@ body{
         .main-header{
             display: block;
         }
+        .menu-top{
+            display: flex;
+            flex-direction: row;
+            gap:30px;
+            list-style: none;
+            font-weight: bold;
+            position: absolute;
+            margin-top: 30px;
+            left: 720px;
+        }
         .icone-profiabet{
             display: flex;
-            position: absolute;
-            margin-top: 100px;
-            margin-left: 230px;
+            margin-bottom: 880px;
+            margin-left: -640px;
+            width: 190px;
         }
         .login{
             display: flex;
-            position: relative;
-            margin-top: 180px;
             margin-left: 230px;
+            margin-top: 20px;
             gap:10px;
             flex-direction: row;
-            position: relative;
         }
         .criar-conta{
             display: flex;
@@ -295,63 +314,46 @@ body{
         }
         .segunda-section{
             display: flex;
-            position: relative;
             margin-top: -650px;
         }
         .foto-mobile{
             display: flex;
+            width: 900px;
             position: relative;
-            margin-left: 190px;
-            margin-top: -100px;
-        }
-        .descricao{
-            display: flex;
-            position: relative;
-            width: 330px;
-            height: 220px;
-            left: 210px;
-            margin-top: -3px;
-            border-radius: 15px;
-            border: 3px solid rgb(89, 89, 177);
+            top: -110px;
+            right: 300px;
         }
         .titulo-descricao{
             color: white;
-            position: relative;
-            margin-top: 15px;
-            left: 25px;
-            font-size: 28px;
+            margin-top: 120px;
+            font-size: 55px;
+            margin-right: 110px;
         }
         .descricao-texto{
             display: flex;
-            position: relative;
-            margin-top: -160px;
-            width: 270px;
-            height: 50px;
-            left: 235px;
-            color: white;
-            text-align: center;
-            font-size: 16px;
-            font-weight:100;
+            width: 400px;
+            height: 30px;
+            color: rgba(255, 255, 255, 0.705);
+            text-align: initial;
+            font-size: 20px;
+            font-weight: lighter;
+            margin-right: 160px;
+            margin-top: 7px;
         }
         .botao-leia-mais{
             display: flex;
-            position: relative;
-            margin-top: 130px;
-            left: 320px;
+            margin-top: 140px;
+            margin-right: 160px;
             width: 115px;
             height: 35px;
             border-radius: 20px;
             background-color: white;
             color: rgb(82,23,137);
-            font-size: 7px;
+            font-size: 10px;
             justify-content: center;
             align-items: center;
         }
         .seta{
-            display: flex;
-            position: relative;
-            margin-top: 40px;
-            left: 310px;
-            opacity: 40%;
+            display: none;
         }
 }
