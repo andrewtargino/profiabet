@@ -150,6 +150,7 @@ body{
             list-style: none;
             font-weight: bold;
             justify-content: center;
+            padding: 15px 0px;
         } 
         .header{
             display: flex;
@@ -160,12 +161,12 @@ body{
         .icone-profiabet{
             display: flex;
             width: 290px;
-            margin-left: -10px;
+            margin-left: -25px;
         }
         .login{
             display: flex;
             margin-top: 150px;
-            margin-left: -10px;
+            margin-left: -25px;
             gap:10px;
             flex-direction: row;
         }
@@ -174,7 +175,7 @@ body{
             position: relative;
             width: 330px;
             height: 220px;
-            left: 530px;
+            left: 690px;
             margin-top: 568px;
             border-radius: 15px;
             border: 3px solid rgb(89, 89, 177);
@@ -211,18 +212,21 @@ body{
             display: flex;
             width: 500px;
             position: relative;
-            right: 120px;
+            right: 160px;
             margin-top: -180px;
         }
         .titulo-descricao{
             color: white;
-            margin-top: 20px;
+            margin-top: 10px;
             font-size: 30px;
-            margin-left: 280px;
+            margin-left: -10px;
+            font-weight: bolder;
         }
         .descricao-texto{
             display: flex;
-            margin-top: 160px;
+            position: absolute;
+            margin-bottom: 30px;
+            left: 240px;
             width: 270px;
             height: 50px;
             color: white;
@@ -232,21 +236,21 @@ body{
         }
         .botao-leia-mais{
             display: flex;
-            margin-top: -100px;
-            margin-left: 420px;
+            margin-top: 40px;
+            margin-left: 620px;
             width: 115px;
             height: 35px;
             border-radius: 20px;
             background-color: white;
             color: rgb(82,23,137);
-            font-size: 7px;
+            font-size: 9px;
             justify-content: center;
             align-items: center;
         }
         .seta{
             display: flex;
             position: absolute;
-            bottom: 30px;
+            bottom: 60px;
             left: 450px;
             opacity: 100%;
         }
